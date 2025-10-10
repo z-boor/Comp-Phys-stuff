@@ -9,9 +9,9 @@ def Newton(x, tol, maxiters):
     while iters < maxiters and err > tol:
         if err < tol :
             print("The intial guess is a root")
-        break
+            break
         iters += 1
-        z = f_3(x)/fx_3(x)
+        z = -1*f_3(x)/fx_3(x)
         x = x + z
         err = abs(x)
         

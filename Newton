@@ -1,0 +1,18 @@
+ 
+def Newton(x, tol, maxiters):
+    iters = 0
+    err = abs(x)
+    def f_3 (x):
+        return (function)
+    def fx_3 (x):
+        return (derivative of function)    
+    while iters < maxiters and err > tol:
+        if err < tol :
+            print("The intial guess is a root")
+        break
+        iters += 1
+        z = f_3(x)/fx_3(x)
+        x = x + z
+        err = abs(x)
+        
+    return x

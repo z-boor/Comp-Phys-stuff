@@ -1,0 +1,25 @@
+#define your function then solve   
+def f(x):
+    return function
+def simpson (a, b, N):
+    h = (b-a)/N
+    I = 1/3*h*(f(a)+f(b))
+    for k in range(1,N,2):
+        I += 4/3*h*f(a+k*h)
+    for k in range(2,N,2):
+        I += 2/3*h*f(a+k*h)
+    return I 
+
+def df4(x):
+  return function
+
+def simpson_err(a,b,N)
+I = 1/3*h*(f(a)+f(b))
+h = (b-a)/N # height of function
+    for i in range(1,N):
+        fun = fun + f(a + (i * h))
+        #takes the value from 1 to N-1 and adds them all together
+  x = (b+a)/2  #a < x < b   
+  err = -1*(b-a)**5/(180*N**4) * df4(x)
+  estimate = h * abs(0.5 * f(a) + 0.5 * f(b) + fun)
+  return estimate, err #returns the simpson value  
